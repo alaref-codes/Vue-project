@@ -1,13 +1,19 @@
 <template>
     <div class="help-me" >
-        <h1>Help</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, hic!</p>
+        <h1>{{name}}</h1>
+        <p>{{description}} </p>
     </div>
 </template>
 
 
 <script>
 export default {
-    name: 'Help'
-}
+  data() {
+    return {
+      name: "Help",
+      description: "This is Help page",
+    }
+  },
+  name: "help-me"
+};
 </script>
