@@ -1,7 +1,9 @@
 <template>
   <div class="about">
-    <h1> {{name}} </h1>
-    <p> {{ description }} </p>
+    <input type="text" v-model="size">
+    <p>{{size}}</p>
+    <h1>{{name}}</h1>
+    <p v-bold="size" > {{ description }} </p>
   </div>
 </template>
 
@@ -13,6 +15,7 @@ export default {
     return {
       name: "About",
       description: "This is about page",
+      size: 0,
     }
   },
   name: "About"

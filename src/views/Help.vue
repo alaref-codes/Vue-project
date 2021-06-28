@@ -1,7 +1,7 @@
 <template>
     <div class="help-me" >
-        <h1>{{name}}</h1>
-        <p>{{description}} </p>
+        <h1>{{name | upper }}</h1>
+        <p>{{description | revers }} </p>
     </div>
 </template>
 

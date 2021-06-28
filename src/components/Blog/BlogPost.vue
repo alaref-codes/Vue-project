@@ -2,7 +2,7 @@
     <div class="blog-post">
         <h2 class="post-title">{{title}}</h2>
         <span class="date">{{date}}</span>
-        <p class="content">{{content}}</p>
+        <p class="content">{{ content | mini(40) }}</p>
         <span class="author">{{author}}</span>
     </div>
 </template>
